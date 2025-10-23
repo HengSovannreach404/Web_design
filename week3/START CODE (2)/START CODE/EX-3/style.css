@@ -1,0 +1,15 @@
+/* TODO */
+.clickme {
+    background-color:  hotpink;
+    border-radius: 30px;
+    border: 10px solid palevioletred;
+    width: 250px;
+    height: 100px;
+    font-size: 50px;
+    cursor: pointer;
+    transition: ease 1s;
+}
+.clickme:hover {
+    background-color: deeppink;
+    border: 10px solid ;
+}

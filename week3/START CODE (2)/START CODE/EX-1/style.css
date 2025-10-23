@@ -1,0 +1,26 @@
+body {
+    background:lightgray;
+    font-family: sans-serif;
+              
+}
+.box {
+    justify-content: center; 
+    align-items: center;    
+    height: 100px; 
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 20px;
+    margin: 30px;
+
+}
+
+.read {
+    border-radius: 30px;
+    width: 120px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
