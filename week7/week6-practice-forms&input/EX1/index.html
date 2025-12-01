@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        .form-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .input-box {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        
+        .two-columns {
+            display: flex;
+            gap: 15px;
+        }
+        .form-group {
+            flex :1 ;
+        }
+        .two-columns{
+            flex: 1;
+        }
+        
+        .radio-group label, .checkbox-group label {
+            display: inline-block;
+            font-weight: normal;
+            margin-right: 15px;
+        }
+        
+        .file-upload {
+            border: 2px dashed #ccc;
+            padding: 15px;
+            text-align: center;
+            border-radius: 4px;
+            background: #f9f9f9;
+        }
+        
+        .slider-container {
+            margin-top: 10px;
+        }
+        
+        .slider-values {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        
+        .submit-btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+        }
+        
+        .submit-btn:hover {
+            background: #0056b3;
+        }
+        
+        textarea {
+            height: 80px;
+            resize: vertical;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* For small screens */
+        @media (max-width: 500px) {
+            .two-columns {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Create Account</h1>
+    
+    <div class="form-box">
+        <form>
+            <!-- First and Last Name -->
+            <div class="two-columns">
+                <div class="form-group">
+                    <label>First name *</label>
+                    <input type="text" class="input-box" placeholder="enter your first name">
+                </div>
+                <div class="form-group">
+                    <label>Last name</label>
+                    <input type="text" class="input-box" placeholder="enter your last name">
+                </div>
+            </div>
+            
+            <!-- Email -->
+            <div class="form-group">
+                <label>Email *</label>
+                <input type="email" class="input-box" placeholder="enter your email">
+            </div>
+            
+            <!-- Password -->
+            <div class="form-group">
+                <label>Password *</label>
+                <input type="password" class="input-box" placeholder="enter your password">
+            </div>
+            
+            <!-- Confirm Password -->
+            <div class="form-group">
+                <label>Confirm Password *</label>
+                <input type="password" class="input-box" placeholder="enter your password again">
+            </div>
+            
+            <!-- Gender -->
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender"> Male</label>
+                    <label><input type="radio" name="gender"> Female</label>
+                </div>
+            </div>
+            
+            <!-- Hobbies -->
+            <div class="form-group">
+                <label>Hobbies:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> Music</label>
+                    <label><input type="checkbox"> Sports</label>
+                    <label><input type="checkbox"> Travel</label>
+                    <label><input type="checkbox"> Movies</label>
+                </div>
+            </div>
+            
+            <!-- Source of Income -->
+            <div class="form-group">
+                <label>Source of Income</label>
+                <select class="input-box">
+                    <option>Employed</option>
+                    <option>Self-employed</option>
+                    <option>Student</option>
+                    <option>Unemployed</option>
+                </select>
+            </div>
+            
+            <!-- Income -->
+            <div class="form-group">
+                <label>Income: <span id="income-value">20%</span></label>
+                <div class="slider-container">
+                    <input type="range" class="input-box" id="income-slider" min="0" max="100" value="20" style="padding: 0;">
+                    <div class="slider-values">
+                        <span>0%</span>
+                        <span>100%</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Upload Profile Picture -->
+            <div class="form-group">
+                <label>Upload Profile Picture</label>
+                <div class="file-upload">
+                    <input type="file">
+                </div>
+            </div>
+            
+            <!-- Age -->
+            <div class="form-group">
+                <label>Age</label>
+                <input type="text" class="input-box" value="18">
+            </div>
+            
+            <!-- Bio -->
+            <div class="form-group">
+                <label>Bio</label>
+                <textarea class="input-box" placeholder="Tell us about yourself"></textarea>
+            </div>
+            
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Create</button>
+        </form>
+    </div>
+
+</body>
+</html>

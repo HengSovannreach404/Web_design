@@ -1,0 +1,36 @@
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    padding: 20px;
+    background-color: lightgreen;
+    font-size: 24px;
+    border-radius: 8px;
+}   
+
+.small {
+    display: none;
+    font-size: 20px;
+}
+
+.big {
+    display: inline;
+    font-size: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+    .small {
+        display: inline;
+    }
+    .big {
+        display: none;
+    }
+
+    .content {
+        background-color: lightcoral;
+    }
+}

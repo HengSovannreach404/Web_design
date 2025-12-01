@@ -1,0 +1,38 @@
+.container{
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 30px;
+}
+.logo{
+    font-size: 22px;
+    font-weight: bold;
+}
+.option{
+    display: flex;
+    gap: 30px;
+    list-style: node;
+}
+
+.icon {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    display: none;
+    height: 22px;
+    width: 22px;
+}
+@media (max-width: 768px){
+    .option{
+        display: none;
+    }
+    .icon{
+        display: inline;
+    }
+
+}
+
+
